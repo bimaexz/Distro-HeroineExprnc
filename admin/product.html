@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Product</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto" rel="stylesheet">
+    <link href="plugins/material/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="plugins/simplebar/simplebar.css" rel="stylesheet" />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
+
+
+    <link href="plugins/prism/prism.css" rel="stylesheet" />
+
+
+
+    <link href="plugins/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+
+
+    <!-- MONO CSS -->
+    <link id="main-css-href" rel="stylesheet" href="css/style.css" />
+
+
+
+
+    <!-- FAVICON -->
+    <link href="images/favicon.png" rel="shortcut icon" />
+
+    <!--
+    HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+  -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <script src="plugins/nprogress/nprogress.js"></script>
+</head>
+
+
+<body class="navbar-fixed sidebar-fixed" id="body">
+    <script>
+        NProgress.configure({ showSpinner: false });
+        NProgress.start();
+    </script>
+
+
+
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+
+
+        <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+        <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+            <div id="sidebar" class="sidebar sidebar-with-footer">
+              <!-- Aplication Brand -->
+              <div class="app-brand">
+                <a href="/index.html">
+                  <img src="images/logo.png" alt="heroine">
+      
+                </a>
+              </div>
+              <!-- begin sidebar scrollbar -->
+              <div class="sidebar-left" data-simplebar style="height: 100%;">
+                <!-- sidebar menu -->
+                <ul class="nav sidebar-inner" id="sidebar-menu">
+                  <li class="active">
+                    <a class="sidenav-item-link" href="index.html">
+                      <i class="mdi mdi-briefcase-account-outline"></i>
+                      <span class="nav-text">Dashboard</span>
+                    </a>
+                  </li>
+                  <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
+                      aria-expanded="false" aria-controls="charts">
+                      <i class="mdi mdi-dns-outline"></i>
+                      <span class="nav-text">Data Master</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="charts" data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        <li>
+                          <a class="sidenav-item-link" href="product.html">
+                            <span class="nav-text">Product</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="sidenav-item-link" href="kategori-product.html">
+                            <span class="nav-text">Category</span>
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="sidenav-item-link" href="customer.html">
+                      <i class="mdi mdi-account-group-outline"></i>
+                      <span class="nav-text">Customer</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="sidenav-item-link" href="orders.html">
+                      <i class="mdi mdi-cart-outline"></i>
+                      <span class="nav-text">Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="sidenav-item-link" href="banner.html">
+                      <i class="mdi mdi-image"></i>
+                      <span class="nav-text">Banner</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="sidenav-item-link" href="gallery.html">
+                      <i class="mdi mdi-image-outline"></i>
+                      <span class="nav-text">Gallery</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+
+
+        <!-- ====================================
+      ——— PAGE WRAPPER
+      ===================================== -->
+        <div class="page-wrapper">
+
+            <!-- Header -->
+      <header class="main-header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          <!-- Sidebar toggle button -->
+          <button id="sidebar-toggler" class="sidebar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+
+          <span class="page-title">dashboard</span>
+
+          <div class="navbar-right ">
+
+            <!-- search form -->
+            <div class="search-form">
+              <form action="index.html" method="get">
+                <div class="input-group input-group-sm" id="input-group-search">
+                  <input type="text" autocomplete="off" name="query" id="search-input" class="form-control"
+                    placeholder="Search..." />
+                  <div class="input-group-append">
+                    <button class="btn" type="button">/</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+            <ul class="nav navbar-nav">
+              <!-- Offcanvas -->
+              <li class="custom-dropdown">
+                <button class="notify-toggler custom-dropdown-toggler">
+                  <i class="mdi mdi-bell-outline icon"></i>
+                  <span class="badge badge-xs rounded-circle">21</span>
+                </button>
+                <div class="dropdown-notify">
+
+                  <header>
+                    <div class="nav nav-underline" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="all-tabs" data-toggle="tab"
+                            href="#all" role="tab" aria-controls="nav-home" aria-selected="true">Notification</a>
+                    </div>
+                </header>
+
+                <div class="" data-simplebar style="height: 325px;">
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade show active" id="all" role="tabpanel"
+                            aria-labelledby="all-tabs">
+
+                            <div class="media media-sm p-4 bg-light mb-0">
+                                <div class="media-sm-wrapper bg-primary">
+                                    <a href="user-profile.html">
+                                        <i class="mdi mdi-calendar-check-outline"></i>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="user-profile.html">
+                                        <span class="title mb-0">Order Completed</span>
+                                        <span class="discribe">Lorem ipsum dolor sit amet</span>
+                                        <span class="time">
+                                            <time>10 min ago</time>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media media-sm p-4 bg-warning-10 mb-0">
+                              <div class="media-sm-wrapper bg-primary">
+                                  <a href="user-profile.html">
+                                      <i class="mdi mdi-clock"></i>
+                                  </a>
+                              </div>
+                              <div class="media-body">
+                                  <a href="user-profile.html">
+                                      <span class="title mb-0">Order Pending</span>
+                                      <span class="discribe">Lorem ipsum dolor sit amet</span>
+                                      <span class="time">
+                                          <time>20 min ago</time>
+                                      </span>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="media media-sm p-4 bg-light mb-0">
+                            <div class="media-sm-wrapper bg-primary">
+                                <a href="user-profile.html">
+                                    <i class="mdi mdi-package-down"></i>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="user-profile.html">
+                                    <span class="title mb-0">Incoming Orders</span>
+                                    <span class="discribe">Lorem ipsum dolor sit amet</span>
+                                    <span class="time">
+                                        <time>40 min ago</time>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                  <footer class="border-top dropdown-notify-footer">
+                    <div class="d-flex justify-content-between align-items-center py-2 px-4">
+                      <span>Last updated 3 min ago</span>
+                      <a id="refress-button" href="javascript:" class="btn mdi mdi-cached btn-refress"></a>
+                    </div>
+                  </footer>
+                </div>
+              </li>
+              <!-- User Account -->
+              <li class="dropdown user-menu">
+                <button class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <img src="images/default.jpg" class="user-image rounded-circle" alt="User Image" />
+                  <span class="d-none d-lg-inline-block">Administrator</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a class="dropdown-link-item" href="user-profile-settings.html">
+                      <i class="mdi mdi-settings"></i>
+                      <span class="nav-text">Account Setting</span>
+                    </a>
+                  </li>
+
+                  <li class="dropdown-footer">
+                    <a class="dropdown-link-item" href="sign-in.html"> <i class="mdi mdi-logout"></i> Log Out </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </header>
+
+            <!-- ====================================
+        ——— CONTENT WRAPPER
+        ===================================== -->
+            <div class="content-wrapper">
+                <div class="content"><!-- For Components documentaion -->
+
+                    <!-- Products Inventory -->
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h2>Products Inventory</h2>
+
+                            <a href="tambah-product.html" class="btn btn btn-primary">Tambah Produk</a>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="collapse" id="collapse-data-tables">
+                                <pre class="language-html mb-4">
+ 
+      </pre>
+                            </div>
+                            <table id="productsTable" class="table table-hover table-product" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>ID</th>
+                                        <th>Category</th>
+                                        <th>Size</th>
+                                        <!-- <th>Committed</th> -->
+                                        <!-- <th>User Activity</th> -->
+                                        <th>Sold</th>
+                                        <th>In Stock</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-01.jpg" alt="Product Image">
+                                        </td>
+                                        <td>TSHIRT "ATTRACT"</td>
+                                        <td>24541</td>
+                                        <td>SHIRT</td>
+                                        <td>L</td>
+                                        <td>2</td>
+
+                                        <td>4</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="" class="" data-toggle="modal" data-target="#exampleModal" >
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-02.jpg" alt="Product Image">
+                                        </td>
+                                        <td>ZIP HOODIE "SPASMODIC"</td>
+                                        <td>24542</td>
+                                        <td>HOODIE</td>
+                                        <td>XL</td>
+                                        <td>5</td>
+
+                                        <td>1</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-03.jpg" alt="Product Image">
+                                        </td>
+                                        <td>JACKET "RAMOSE"</td>
+                                        <td>24543</td>
+                                        <td>SWEATER</td>
+                                        <td>XXL</td>
+                                        <td>7</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-04.jpg" alt="Product Image">
+                                        </td>
+                                        <td>SWEATER "ESCAPE"</td>
+                                        <td>24544</td>
+                                        <td>ACCESORIES</td>
+                                        <td>L</td>
+                                        <td>3</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-01.jpg" alt="Product Image">
+                                        </td>
+                                        <td>TSHIRT "ATTRACT"</td>
+                                        <td>24541</td>
+                                        <td>SHIRT</td>
+                                        <td>L</td>
+                                        <td>2</td>
+
+                                        <td>4</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="" class="" data-toggle="modal" data-target="#exampleModal" >
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-02.jpg" alt="Product Image">
+                                        </td>
+                                        <td>ZIP HOODIE "SPASMODIC"</td>
+                                        <td>24542</td>
+                                        <td>HOODIE</td>
+                                        <td>XL</td>
+                                        <td>5</td>
+
+                                        <td>1</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-03.jpg" alt="Product Image">
+                                        </td>
+                                        <td>JACKET "RAMOSE"</td>
+                                        <td>24543</td>
+                                        <td>SWEATER</td>
+                                        <td>XXL</td>
+                                        <td>7</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-04.jpg" alt="Product Image">
+                                        </td>
+                                        <td>SWEATER "ESCAPE"</td>
+                                        <td>24544</td>
+                                        <td>ACCESORIES</td>
+                                        <td>L</td>
+                                        <td>3</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-01.jpg" alt="Product Image">
+                                        </td>
+                                        <td>TSHIRT "ATTRACT"</td>
+                                        <td>24541</td>
+                                        <td>SHIRT</td>
+                                        <td>L</td>
+                                        <td>2</td>
+
+                                        <td>4</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="" class="" data-toggle="modal" data-target="#exampleModal" >
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-02.jpg" alt="Product Image">
+                                        </td>
+                                        <td>ZIP HOODIE "SPASMODIC"</td>
+                                        <td>24542</td>
+                                        <td>HOODIE</td>
+                                        <td>XL</td>
+                                        <td>5</td>
+
+                                        <td>1</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-03.jpg" alt="Product Image">
+                                        </td>
+                                        <td>JACKET "RAMOSE"</td>
+                                        <td>24543</td>
+                                        <td>SWEATER</td>
+                                        <td>XXL</td>
+                                        <td>7</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-0">
+                                            <img src="images/products/products-xs-04.jpg" alt="Product Image">
+                                        </td>
+                                        <td>SWEATER "ESCAPE"</td>
+                                        <td>24544</td>
+                                        <td>ACCESORIES</td>
+                                        <td>L</td>
+                                        <td>3</td>
+
+                                        <td>6</td>
+                                        <th class="item-center">
+                                            <a href="detail-product.html">
+                                                <i class="mdi mdi-eye-outline"></i>
+                                            </a>
+                                            <a href="edit-product.html">
+                                                <i class="mdi mdi-open-in-new"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="mdi mdi-close text-danger"></i>
+                                            </a>
+                                        </th>
+
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer mt-auto">
+                <div class="copyright bg-white">
+                    <p>
+                        &copy; <span id="copy-year"></span> Copyright<a
+                            class="text-primary" href="#" target="_blank"> Heroine Exprnc Store</a>.
+                    </p>
+                </div>
+                <script>
+                    var d = new Date();
+                    var year = d.getFullYear();
+                    document.getElementById("copy-year").innerHTML = year;
+                </script>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Card Offcanvas -->
+    <div class="card card-offcanvas" id="contact-off">
+        <div class="card-header">
+            <h2>Contacts</h2>
+            <a href="#" class="btn btn-primary btn-pill px-4">Add New</a>
+        </div>
+        <div class="card-body">
+
+            <div class="mb-4">
+                <input type="text" class="form-control form-control-lg form-control-secondary rounded-0"
+                    placeholder="Search contacts...">
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-01.jpg" alt="User Image">
+                        <span class="active bg-primary"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Selena Wagner</span>
+                        <span class="discribe">Designer</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-02.jpg" alt="User Image">
+                        <span class="active bg-primary"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Walter Reuter</span>
+                        <span>Developer</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-03.jpg" alt="User Image">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Larissa Gebhardt</span>
+                        <span>Cyber Punk</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-04.jpg" alt="User Image">
+                    </a>
+
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Albrecht Straub</span>
+                        <span>Photographer</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-05.jpg" alt="User Image">
+                        <span class="active bg-danger"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Leopold Ebert</span>
+                        <span>Fashion Designer</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media media-sm">
+                <div class="media-sm-wrapper">
+                    <a href="user-profile.html">
+                        <img src="images/user/user-sm-06.jpg" alt="User Image">
+                        <span class="active bg-primary"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="user-profile.html">
+                        <span class="title">Selena Wagner</span>
+                        <span>Photographer</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/simplebar/simplebar.min.js"></script>
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+
+
+
+    <script src="plugins/prism/prism.js"></script>
+
+
+
+    <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+
+
+
+    <script src="plugins/apexcharts/apexcharts.js"></script>
+
+
+    <script src="js/mono.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+
+    <!--  -->
+
+
+</body>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Hapus data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin ingin menghapus data ini?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-pill" data-dismiss="modal">Ya</button>
+        <button type="button" class="btn btn-primary btn-pill" data-dismiss="modal">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</html>
